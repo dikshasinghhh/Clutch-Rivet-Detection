@@ -1,13 +1,23 @@
 # Clutch-Rivet-Detection
 
-Clutch plates are critical components in automotive and industrial machinery, and identifying the proper placement of rivets—both head and tail—is essential in real-world manufacturing and quality assurance scenarios. Incorrect or missing rivets can lead to structural failures, reduced performance, and safety issues. This project focuses on detecting and classifying rivet conditions using a computer vision model trained on clutch plate images, aiming to automate inspection and ensure production reliability.
-<br>
+Clutch plates are critical components in automotive and industrial machinery, and identifying the proper placement of rivets both head and tail is essential in real-world manufacturing and quality assurance scenarios. 
 
-- Absence_Head: Expected position of a head rivet is empty. <br>
-- Absence_Tail: Expected position of a tail rivet is empty. <br>
-- Head_Rivet: Properly installed rivet head detected. <br>
-- Tail_Rivet: Properly installed rivet tail detected. <br>
+---
+## Project Overview
 
+Incorrect or missing rivets can lead to structural failures, reduced performance, and safety issues. This project focuses on detecting and classifying rivet conditions using a computer vision model trained on clutch plate images, aiming to automate inspection and ensure production reliability
+
+- `Absence_Head`
+- `Absence_Tail`
+- `Head_Rivet`
+- `Tail_Rivet`
+
+## 📂 **Dataset**
+
+- **Source**: Annotated on ROBOFLOW, exported in YOLO format.
+- **Frames**: ~46, frame-by-frame annotated, applied  10 albumentations on each image which gave around 500 plus images
+- **Classes**: 4 industrial parts.
+  
 <br>
 
 <p align="center">
